@@ -1,9 +1,16 @@
 {
   "version": 1,
-  "clusterName": "192.168.64.74:8443",
+  "clusterName": "https://192.168.54.248:8443",
   "namespace": "myproject",
-  "clientId": "example_client_id",
+  "clientId": "myapp-cordova",
   "services": [
+    {
+      "id": "metrics-myapp-cordova",
+      "name": "metrics",
+      "type": "metrics",
+      "url": "https://aerogear-app-metrics-myproject.192.168.54.248.nip.io/metrics",
+      "config": {}
+    }
   ]
 }
 
